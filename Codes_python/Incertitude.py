@@ -14,7 +14,7 @@ def drond(f,dx,x,i):
     return (f(y)-f(x))/dx
 
 def incertitude(f,N,x,u,dx):
-    assert len(x) == N :
+    assert len(x) == N 
     v = 0
     for i in range(N):
         v = v + (drond(f,dx,x,i)*u[i])**2
