@@ -1,18 +1,32 @@
-x = [15.29E-3,2.39E-6]
-u = [5E-5/(3**0.5),1E-6/(0.3**0.5)]
-dx = 1E-15
+# x = [20.60,0.00364666312621703]
+# u = [0.2, 1E-4]
+# dx = 1E-10
+r = [20.60,0.006163973668461999]
+delta_r = [0.2, 1E-4]
+dx = 1E-10
 
-def f(x):
-    return x[0]*x[1]
+
+roh_eau = 1000 #kg/m^3
+
+
+
+def v(r):
+    return x[0]/x[1]
+
+def roh(Fair,Feau):
+    return roh_eau/(1-(Feau/Fair))
 
 def drond(f,dx,x,i): 
     N = len(x)
     y = [0]*N
     for j in range(N):
-        y[i] = x[i]
+        y[j] = x[j]
     y[i] = x[i] + dx
-    return (f(y)-f(x))/dx
-    
+    print (y)
+    print (x)
+    a = f(y) - f(x)
+    return a/dx
+
 
 def incertitude(f,x,u,dx):
     N = len(x)
