@@ -1,4 +1,4 @@
-Temps  1 - Vitesse de mesure standard [s]	Force 50N [N]	LVDT [N]	déplacement Machine (0-10V) [V]	Force Machine (0-10V) [V]	moyenne [N]	masse []
+Temps  1 - Vitesse de mesure standard [s]	Force 50N [N]	LVDT [N]	deplacement Machine (0-10V) [V]	Force Machine (0-10V) [V]	moyenne [N]	masse []
 0	-0,03492	-1000000	-1000000	-1000000	-0,00035	0,000	
 0,00333	-0,03387	-1000000	-1000000	-1000000	-0,00069	0,000	
 0,00667	-0,03497	-1000000	-1000000	-1000000	-0,00104	-0,00011	
