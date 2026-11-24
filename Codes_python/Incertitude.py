@@ -8,6 +8,9 @@ dx = 1E-10
 
 roh_eau = 1000 #kg/m^3
 
+x = [3107.0, 5784, 3301] # roh, cl, cs
+delta_x = []
+
 
 
 def v(r):
@@ -15,6 +18,11 @@ def v(r):
 
 def roh(F):
     return roh_eau/(1-(F[1]/F[0]))
+def E(x):
+    return (x[0]*x[2]**2*(3*x[1]**2-4*x[2]**2))/(x[1]**2 - x[2]**2)
+def mu(x):
+    return (x[1]**2-2*x[2]**2)/(2*(x[1]**2 - x[2]**2))
+
 
 def drond(f,dx,x,i): 
     N = len(x)
