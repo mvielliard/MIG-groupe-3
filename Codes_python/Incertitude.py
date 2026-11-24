@@ -13,8 +13,8 @@ roh_eau = 1000 #kg/m^3
 def v(r):
     return x[0]/x[1]
 
-def roh(Fair,Feau):
-    return roh_eau/(1-(Feau/Fair))
+def roh(F):
+    return roh_eau/(1-(F[1]/F[0]))
 
 def drond(f,dx,x,i): 
     N = len(x)
