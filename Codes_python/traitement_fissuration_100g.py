@@ -26,13 +26,13 @@ def incertitude_type(x): #Calcul l'incertitude associé a une sére de N mesures
     u_x = np.sum((x - x_moy)**2)/(N-1)
     return (u_x/N)**0.5
 
-mesure_1 = pd.read_excel("C:\\Users\\l\\OneDrive\\Bureau\\Mesures_indenteur\\Filiation_1_100g.xlsx")
+mesure_1 = pd.read_excel('Data\\Mesures_indenteur\\Filiation_1_100g.xlsx')
 mesure_1 = mesure_1.T
-mesure_2 = pd.read_excel("C:\\Users\\l\\OneDrive\\Bureau\\Mesures_indenteur\\Filiation_2_100g.xlsx")
+mesure_2 = pd.read_excel('Data\\Mesures_indenteur\\Filiation_2_100g.xlsx')
 mesure_2 = mesure_2.T
-mesure_3 = pd.read_excel("C:\\Users\\l\\OneDrive\\Bureau\\Mesures_indenteur\\Filiation_3_100g.xlsx")
+mesure_3 = pd.read_excel('Data\\Mesures_indenteur\\Filiation_3_100g.xlsx')
 mesure_3 = mesure_3.T 
-mesure_4 = pd.read_excel("C:\\Users\\l\\OneDrive\\Bureau\\Mesures_indenteur\\Filiation_4_100g.xlsx")
+mesure_4 = pd.read_excel('Data\\Mesures_indenteur\\Filiation_4_100g.xlsx')
 mesure_4 = mesure_4.T 
 
 # print(mesure_4)
