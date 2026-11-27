@@ -41,6 +41,7 @@ def tableau_LaTeX(les_donnees, caption):
         LaTeX += "\\textbf{n°} & \\textbf{Dureté} &"
 
     LaTeX = LaTeX[:-1]
+    LaTeX += "\\\\ \n"
 
 
     LaTeX += "\n\\hline\n"
@@ -62,9 +63,11 @@ def tableau_LaTeX(les_donnees, caption):
 
     LaTeX += "\n\\hline\n"
 
-    LaTeX += "\\end{table}\n"\
+    LaTeX += "\\end{tabular}\n"\
             "\\caption{" + caption + "}\n"\
-            "\\end{tabular}"
+            "\\end{table}"
+
+
 
     #ABSOLUTE CINEMA
 
