@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from generateur_tableau_LaTeX import tableau_LaTeX
 
 
 def drond(f,dx,x,i): #Dériivation par rapport à la ième variable
@@ -89,4 +90,4 @@ print(df)
 
 df = df.to_latex(label = 'Dureté du verre 3', index = False)
 # print(mesures_latex)
-print(mesures_durete)
+print(tableau_LaTeX(mesures_durete,'Piche'))
